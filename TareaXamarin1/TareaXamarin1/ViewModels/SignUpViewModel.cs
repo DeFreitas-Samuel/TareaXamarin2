@@ -8,20 +8,21 @@ using Xamarin.Forms;
 
 namespace TareaXamarin1.ViewModels
 {
-    class MainViewModel : INotifyPropertyChanged
+    class SignUpViewModel : INotifyPropertyChanged
     {
         private string _input_user;
         private string _input_password;
 
-        public string InputUser 
+        public string InputUser
         {
             get { return _input_user; }
-            set {
+            set
+            {
 
                 _input_user = value;
                 OnPropertyChanged(nameof(InputUser));
-            
-            } 
+
+            }
         }
         public string InputPassword
         {
@@ -55,15 +56,15 @@ namespace TareaXamarin1.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Bienvenido", $"Hola, {InputUser}", "Ok");
             }
         }
-        private void RegisterPage() 
+        private void RegisterPage()
         {
             Application.Current.MainPage = new SignUpPage();
         }
 
-        public ICommand LoginComand{ get; }
+        public ICommand LoginComand { get; }
         public ICommand RegisterPageCommand { get; }
 
-        public MainViewModel()
+        public SignUpViewModel()
         {
             LoginComand = new Command(Login);
             RegisterPageCommand = new Command(RegisterPage);
@@ -73,7 +74,7 @@ namespace TareaXamarin1.ViewModels
 
         private void OnPropertyChanged(string propertyName)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));  
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

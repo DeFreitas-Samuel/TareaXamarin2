@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaXamarin1.Views.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+
+            <Image Source="XamarinLogo"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Label Text="Nombre de Usuario:"/>
+
+            <Entry Placeholder="Introduzca su nombre de usuario" 
+                   PlaceholderColor="LightGray" 
+                   Text="{Binding InputUser}"/>
+
+            <Label Text="Email:"/>
+
+            <Entry Placeholder="Email" 
+                   PlaceholderColor="LightGray" 
+                   Text="{Binding InputUser}"/>
+            
+            <Label Text="Contraseña:"/>
+
+            <Entry Placeholder="Introduzca su contraseña" 
+               PlaceholderColor="LightGray" 
+               IsPassword="True" 
+               Text="{Binding InputPassword}" />
+
+            <Label Text="Por favor confirme su contraseña:"/>
+            
+            <Entry Placeholder="Confirme su contraseña" 
+               PlaceholderColor="LightGray" 
+               IsPassword="True" 
+               Text="{Binding InputPassword}" />
+
+            <Button Text="Registrarse"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Command="{Binding RegisterPageCommand}"
+                />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
