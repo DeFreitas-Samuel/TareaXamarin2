@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TareaXamarin1.ViewModels" 
+             x:DataType="viewmodels:MainViewModel"
+             x:Class="TareaXamarin1.MainPage">
+
+    <StackLayout VerticalOptions="Center">
+
+        <Image Source="XamarinLogo"
+        WidthRequest="300"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
+        
+        <Label Text="Nombre de Usuario:"/> 
+        
+        <Entry x:Name="InputU"
+               Placeholder="Introduzca su nombre de usuario" 
+               PlaceholderColor="LightGray" 
+               Text="{Binding InputUser}"/>
+        
+        <Label Text="Contraseña:"/>
+        
+        <Entry Placeholder="Introduzca su contraseña" 
+               PlaceholderColor="LightGray" 
+               IsPassword="True" 
+               Text="{Binding InputPassword}" />
+
+        <Button Text="Iniciar Sesion" 
+                Command="{Binding  LoginComand}"/>
+    </StackLayout>
+
+</ContentPage>
