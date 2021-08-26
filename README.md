@@ -3,7 +3,7 @@
 ## El page de login ahora contiene un boton extra para registrarse
 ![Screenshot_1630001266](https://user-images.githubusercontent.com/52897285/131014744-56964a3e-cf4e-4f56-a870-4b1accb284c1.png)
 
-#La pantalla de registro
+## La pantalla de registro
 ![Screenshot_1630001290](https://user-images.githubusercontent.com/52897285/131014749-f753a743-0649-4281-b9c9-842edae6ba1c.png)
 
 ## Mensaje de error al intentar registrarse y no haber llenado todos los campos
