@@ -19,6 +19,7 @@
 ![Screenshot_1630015832](https://user-images.githubusercontent.com/52897285/131044978-87e1b0de-b817-4f25-9558-b45121cd866f.png)
 
 ## Profile Page de mi tabbed page
-![Screenshot_1630001376](https://user-images.githubusercontent.com/52897285/131014739-b0e2e9e5-7c01-4d65-b3fe-31c61b1ea805.png)
+![Screenshot_1630017825](https://user-images.githubusercontent.com/52897285/131045462-9ecdcce1-eb69-4a53-a98a-8f49971e84f0.png)
+
 
 
