@@ -3,7 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TareaXamarin1.Views.HomePage"
             xmlns:local="clr-namespace:TareaXamarin1.Views">
-    <local:MeditationPage/>
+
+    <local:HomeAppPage/>
+    <local:DeliveryPage/>
+    <local:BookmarkPage/>
+    <local:TopFoodiePage/>
     <local:ProfilePage/>
-    <local:SettingsPage/>
+    
 </TabbedPage>

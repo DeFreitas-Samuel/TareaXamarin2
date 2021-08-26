@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TareaXamarin1.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SettingsPage : ContentPage
+    public partial class TopFoodiePage : ContentPage
     {
-        public SettingsPage()
+        public TopFoodiePage()
         {
             InitializeComponent();
         }

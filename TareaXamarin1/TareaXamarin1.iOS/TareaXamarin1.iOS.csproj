@@ -76,28 +76,34 @@
     <ImageAsset Include="Assets.xcassets\blank-profile.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\picture_meditation.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\bookmark.imageset\bookmark.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\picture_meditation.imageset\picture_meditation.png">
+    <ImageAsset Include="Assets.xcassets\delivery.imageset\delivery.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\profile.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\home.imageset\home.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\settings.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\bookmark.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\meditation.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\delivery.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\meditation.imageset\meditation.png">
+    <ImageAsset Include="Assets.xcassets\home.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\profile.imageset\profile.png">
+    <ImageAsset Include="Assets.xcassets\trophy.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\settings.imageset\settings.png">
+    <ImageAsset Include="Assets.xcassets\user_profile.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\trophy.imageset\trophy.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\user_profile.imageset\user_profile.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\XamarinLogo.imageset\Contents.json">

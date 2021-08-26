@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaXamarin1.Views.DeliveryPage"
+             Title="Discovery"
+             Icon="delivery">
+    <ContentPage.Content>
+        <Grid  BackgroundColor="#c6c6c7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="0.3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" ImageSource="bars" Margin="20,5,10, 5" BackgroundColor="White" Text="Bars &amp; Hotels"/>
+            <Button Grid.Row="0" Grid.Column="1" ImageSource="fine_dining" Margin="10,5,20, 5" BackgroundColor="White" Text="Fine Dining"/>
+            <Button Grid.Row="1" Grid.Column="0" ImageSource="cafes" Margin="20,5,10, 5" BackgroundColor="White" Text="Cafes"/>
+            <Button Grid.Row="1" Grid.Column="1" ImageSource="nearby" Margin="10,5,20, 5" BackgroundColor="White" Text="Nearby"/>
+            <Button Grid.Row="2" Grid.Column="0" ImageSource="fast_food" Margin="20,5,10, 5" BackgroundColor="White" Text="Fast Foods"/>
+            <Button Grid.Row="2" Grid.Column="1" ImageSource="featured_food" Margin="10,5,20, 5" BackgroundColor="White" Text="Featured Foods"/>
+
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

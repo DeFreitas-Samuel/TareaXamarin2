@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TareaXamarin1.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MeditationPage : ContentPage
+    public partial class DeliveryPage : ContentPage
     {
-        public MeditationPage()
+        public DeliveryPage()
         {
             InitializeComponent();
         }
