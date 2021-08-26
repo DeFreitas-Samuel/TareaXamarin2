@@ -11,7 +11,9 @@ namespace TareaXamarin1.ViewModels
     class SignUpViewModel : INotifyPropertyChanged
     {
         private string _input_user;
+        private string _input_email;
         private string _input_password;
+        private string _input_repeated_password;
 
         public string InputUser
         {
@@ -21,6 +23,17 @@ namespace TareaXamarin1.ViewModels
 
                 _input_user = value;
                 OnPropertyChanged(nameof(InputUser));
+
+            }
+        }
+        public string InputEmail
+        {
+            get { return _input_email; }
+            set
+            {
+
+                _input_email = value;
+                OnPropertyChanged(nameof(InputEmail));
 
             }
         }
@@ -35,39 +48,40 @@ namespace TareaXamarin1.ViewModels
 
             }
         }
-
-        async private void Login()
+        public string InputRepeatedPassword
         {
-            if (string.IsNullOrEmpty(InputPassword) && string.IsNullOrEmpty(InputUser))
+            get { return _input_repeated_password; }
+            set
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Por favor introduzca sus credenciales ", "Ok");
+
+                _input_repeated_password = value;
+                OnPropertyChanged(nameof(InputRepeatedPassword));
 
             }
-            else if (string.IsNullOrEmpty(InputPassword))
+        }
+
+
+        async private void Register()
+        {
+            if (string.IsNullOrEmpty(InputPassword) || string.IsNullOrEmpty(InputUser) || string.IsNullOrEmpty(InputEmail) || string.IsNullOrEmpty(InputRepeatedPassword))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Por favor introduzca su contrasena ", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Error", "Por favor llene todos los campos", "Ok");
             }
-            else if (string.IsNullOrEmpty(InputUser))
+            else if (!string.Equals(InputPassword, InputRepeatedPassword))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Por favor introduzca su nombre de usuario ", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Error", "Las contraseñas no coinciden ", "Ok");
             }
             else
             {
                 await Application.Current.MainPage.DisplayAlert("Bienvenido", $"Hola, {InputUser}", "Ok");
             }
         }
-        private void RegisterPage()
-        {
-            Application.Current.MainPage = new SignUpPage();
-        }
 
-        public ICommand LoginComand { get; }
-        public ICommand RegisterPageCommand { get; }
+        public ICommand RegisterCommand { get; }
 
         public SignUpViewModel()
         {
-            LoginComand = new Command(Login);
-            RegisterPageCommand = new Command(RegisterPage);
+            RegisterCommand = new Command(Register);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
