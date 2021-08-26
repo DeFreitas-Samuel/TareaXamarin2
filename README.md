@@ -1,4 +1,4 @@
-# TareaXamarin1
+# TareaXamarin2
 
 ## El page de login ahora contiene un boton extra para registrarse
 ![Screenshot_1630001266](https://user-images.githubusercontent.com/52897285/131014744-56964a3e-cf4e-4f56-a870-4b1accb284c1.png)
