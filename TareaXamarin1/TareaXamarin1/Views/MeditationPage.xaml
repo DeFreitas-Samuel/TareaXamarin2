@@ -2,29 +2,90 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TareaXamarin1.Views.MeditationPage"
-             Title="Meditacion"
+             Title="Meditation"
              Icon="meditation"
              MinimumHeightRequest="500">
 
     <ContentPage.Content>
-        <Label Text="Hello World"/>
-        <!--<Grid RowDefinitions="Auto Auto Auto" BackgroundColor="#F7F8F6" ColumnDefinitions="*">
-            <Label Grid.Row="0" 
-                   Grid.ColumnSpan="1"
-                   Text="Featured Course"
-                   TextColor="DarkSlateGray"
-                   FontAttributes="Bold"
-                   FontSize="Large"
-                   Padding="20,20,20,0"/>
-            <Label Grid.Row="1" 
-                   Grid.ColumnSpan="1"
-                   Text="Stress will always be around. The trick is finding a few stress-busters you can enjoy!"
-                   TextColor="DarkSlateGray"
-                   FontSize="Default"
-                   Padding="20,20,20,0"/>
+        <ScrollView>
+            <Grid BackgroundColor="#E4E6E3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="350"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label  Grid.Row="0"
+                            Margin="20,0,0,20"
+                            Text="Featured Course"
+                            TextColor="DarkSlateGray"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                           />
+                <Label Grid.Row="1"
+                           Margin="20,-20,20,20"
+                           Text="Stress will always be around. The trick is finding a few stress-busters you can enjoy!"
+                           TextColor="DarkSlateGray"
+                           FontSize="Default"
+                           />
+                <Grid BackgroundColor="White" Grid.Row="2" Margin="20,-20,20,20" HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="picture_meditation"  
+                               Margin="0,20,0,0"/>
+                    <Label Grid.Row="1"  
+                           Text="Foundations"
+                           HorizontalTextAlignment="Center"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                               />
+
+                    <Label Grid.Row="2"
+                           Margin="0,-20,0,0"
+                           Text="This guided meditation for begginers course will introduce you to mindfullness"
+                           HorizontalTextAlignment="Center"
+                           FontSize="Medium"
+                               />
+                    <Label Grid.Row="3"
+                           HorizontalTextAlignment="Center"
+                           Margin="0,10,0,0"
+                           Text="10 min"/>
+                </Grid>
+                <Grid Grid.Row="3"  Margin="20,0,20,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="ON THE GO"/>
+                    <Button Grid.Row="1" Grid.Column="0" Text="After work" BackgroundColor="#E8EFEE"/>
+                    <Button Grid.Row="1" Grid.Column="1" Text="Tough Day" BackgroundColor="#6EB1BB" TextColor="White"/>
+                    <Button Grid.Row="2" Grid.Column="0" Text="Good Morning" BackgroundColor="#F5C898" TextColor="White" />
+                    <Button Grid.Row="2" Grid.Column="1" Text="Sleep" BackgroundColor="#CECFD2" />
+                    <Button Grid.Row="3" Grid.Column="0" Text="Quick Break" BackgroundColor="#9BD8D7"/>
+                    <Button Grid.Row="3" Grid.Column="1" Text="Big Event" BackgroundColor="#F3AC97" TextColor="White"/>
+                </Grid>
 
 
 
-        </Grid>-->
+
+            </Grid>
+        </ScrollView>    
     </ContentPage.Content>
 </ContentPage>

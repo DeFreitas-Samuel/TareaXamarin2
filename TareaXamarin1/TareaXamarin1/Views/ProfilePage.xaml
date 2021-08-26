@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TareaXamarin1.Views.ProfilePage"
-             Title="Perfil"
+             Title="Profile"
              Icon="profile">
     
     <ContentPage.Content>
@@ -11,14 +11,14 @@
                    HorizontalOptions="Center"
                    HeightRequest="300"
                    WidthRequest="300"/>
-            <Label Text="Cambiar foto de perfil"
+            <Label Text="Change profile picture"
                    HorizontalOptions="Center"
                    TextColor="Blue"
                    FontAttributes="Bold"/>
-            <Label Text="Nombre:"/>
+            <Label Text="Name:"/>
             <Label Text="Email:"/>
-            <Label Text="Miembro desde:"/>
-            <Label Text="Logros:"/>
+            <Label Text="Member since:"/>
+            <Label Text="Achievements:"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

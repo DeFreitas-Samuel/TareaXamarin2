@@ -12,9 +12,9 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
 
-            <Label Text="Nombre de Usuario:"/>
+            <Label Text="Username:"/>
 
-            <Entry Placeholder="Introduzca su nombre de usuario" 
+            <Entry Placeholder="Username" 
                    PlaceholderColor="LightGray" 
                    Text="{Binding InputUser}"/>
 
@@ -24,21 +24,21 @@
                    PlaceholderColor="LightGray" 
                    Text="{Binding InputEmail}"/>
             
-            <Label Text="Contraseña:"/>
+            <Label Text="Password:"/>
 
-            <Entry Placeholder="Introduzca su contraseña" 
+            <Entry Placeholder="Password" 
                PlaceholderColor="LightGray" 
                IsPassword="True" 
                Text="{Binding InputPassword}" />
 
-            <Label Text="Por favor confirme su contraseña:"/>
+            <Label Text="Confirm password:"/>
             
-            <Entry Placeholder="Confirme su contraseña" 
+            <Entry Placeholder="Confirm your password" 
                PlaceholderColor="LightGray" 
                IsPassword="True" 
                Text="{Binding InputRepeatedPassword}" />
 
-            <Button Text="Registrarse"
+            <Button Text="Sign up"
                 BackgroundColor="Blue"
                 TextColor="White"
                 Command="{Binding RegisterCommand}"

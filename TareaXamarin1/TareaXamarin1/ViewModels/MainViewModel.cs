@@ -39,20 +39,20 @@ namespace TareaXamarin1.ViewModels
         {
             if (string.IsNullOrEmpty(InputPassword) && string.IsNullOrEmpty(InputUser))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Por favor introduzca sus credenciales ", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Error", "Please enter your credentials ", "Ok");
 
             }
             else if (string.IsNullOrEmpty(InputPassword))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Por favor introduzca su contrasena ", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Error", "Please enter your password ", "Ok");
             }
             else if (string.IsNullOrEmpty(InputUser))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Por favor introduzca su nombre de usuario ", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Error", "Please enter your username", "Ok");
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Bienvenido", $"Hola, {InputUser}", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Welcome", $"Hello, {InputUser}", "Ok");
                 Application.Current.MainPage = new HomePage();
             }
         }

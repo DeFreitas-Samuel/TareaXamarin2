@@ -11,23 +11,23 @@
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
         
-        <Label Text="Nombre de Usuario:"/> 
+        <Label Text="Username:"/> 
         
-        <Entry Placeholder="Introduzca su nombre de usuario" 
+        <Entry Placeholder="Username" 
                PlaceholderColor="LightGray" 
                Text="{Binding InputUser}"/>
         
-        <Label Text="Contraseña:"/>
+        <Label Text="Password:"/>
         
-        <Entry Placeholder="Introduzca su contraseña" 
+        <Entry Placeholder="Password" 
                PlaceholderColor="LightGray" 
                IsPassword="True" 
                Text="{Binding InputPassword}" />
 
-        <Button Text="Iniciar Sesion" 
+        <Button Text="Log In" 
                 Command="{Binding  LoginComand}"/>
     
-        <Button Text="Registrarse"
+        <Button Text="Sign Up"
                 BackgroundColor="Blue"
                 TextColor="White"
                 Command="{Binding RegisterPageCommand}"

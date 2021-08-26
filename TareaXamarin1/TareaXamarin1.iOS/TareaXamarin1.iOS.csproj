@@ -76,6 +76,12 @@
     <ImageAsset Include="Assets.xcassets\blank-profile.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\picture_meditation.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\picture_meditation.imageset\picture_meditation.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\profile.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>

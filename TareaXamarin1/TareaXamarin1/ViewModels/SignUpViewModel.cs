@@ -65,15 +65,15 @@ namespace TareaXamarin1.ViewModels
         {
             if (string.IsNullOrEmpty(InputPassword) || string.IsNullOrEmpty(InputUser) || string.IsNullOrEmpty(InputEmail) || string.IsNullOrEmpty(InputRepeatedPassword))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Por favor llene todos los campos", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Error", "Please fill all the fields", "Ok");
             }
             else if (!string.Equals(InputPassword, InputRepeatedPassword))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Las contraseñas no coinciden ", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Error", "The passwords don't match ", "Ok");
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Bienvenido", $"Hola, {InputUser}", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Welcome", $"Hello, {InputUser}", "Ok");
                 Application.Current.MainPage = new HomePage();
             }
         }
