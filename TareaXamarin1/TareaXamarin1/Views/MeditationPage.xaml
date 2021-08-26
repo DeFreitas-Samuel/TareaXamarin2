@@ -7,10 +7,24 @@
              MinimumHeightRequest="500">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Label Text="Hello World"/>
+        <!--<Grid RowDefinitions="Auto Auto Auto" BackgroundColor="#F7F8F6" ColumnDefinitions="*">
+            <Label Grid.Row="0" 
+                   Grid.ColumnSpan="1"
+                   Text="Featured Course"
+                   TextColor="DarkSlateGray"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   Padding="20,20,20,0"/>
+            <Label Grid.Row="1" 
+                   Grid.ColumnSpan="1"
+                   Text="Stress will always be around. The trick is finding a few stress-busters you can enjoy!"
+                   TextColor="DarkSlateGray"
+                   FontSize="Default"
+                   Padding="20,20,20,0"/>
+
+
+
+        </Grid>-->
     </ContentPage.Content>
 </ContentPage>
