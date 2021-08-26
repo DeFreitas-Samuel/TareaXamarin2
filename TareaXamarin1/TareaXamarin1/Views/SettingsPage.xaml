@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaXamarin1.Views.SettingsPage"
+             Title="Configuracion"
+             Icon="settings">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  Text="Ajustes de la App"
+                    HorizontalOptions="StartAndExpand"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="20 5 0 "/>
+
+            <Button Text="Data y Almacenamiento "/>
+
+            <Label  Text="Notificaciones"
+                    HorizontalOptions="StartAndExpand"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="20 5 0 "/>
+            
+            <Button Text="Notificaciones Push "/>
+            
+            <Button Text="Notificaciones por Email"/>
+
+            <Label  Text="Membresia"
+                    HorizontalOptions="StartAndExpand"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="20 5 0 "/>
+
+            <Button Text="Detalles"/>
+
+            <Label  Text="Legal"
+                    HorizontalOptions="StartAndExpand"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    Padding="20 5 0 "/>
+
+            <Button Text="Privacidad"/>
+
+            <Button Text="Terminos de Servicio"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

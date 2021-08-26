@@ -53,6 +53,7 @@ namespace TareaXamarin1.ViewModels
             else
             {
                 await Application.Current.MainPage.DisplayAlert("Bienvenido", $"Hola, {InputUser}", "Ok");
+                Application.Current.MainPage = new HomePage();
             }
         }
         private void RegisterPage() 
