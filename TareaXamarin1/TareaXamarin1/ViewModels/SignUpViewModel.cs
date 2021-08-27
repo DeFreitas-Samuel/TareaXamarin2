@@ -10,52 +10,52 @@ namespace TareaXamarin1.ViewModels
 {
     class SignUpViewModel : INotifyPropertyChanged
     {
-        private string _input_user;
-        private string _input_email;
-        private string _input_password;
-        private string _input_repeated_password;
+        private string _user;
+        private string _email;
+        private string _password;
+        private string _repeatedPassword;
 
-        public string InputUser
+        public string User
         {
-            get { return _input_user; }
+            get { return _user; }
             set
             {
 
-                _input_user = value;
-                OnPropertyChanged(nameof(InputUser));
+                _user = value;
+                OnPropertyChanged(nameof(User));
 
             }
         }
-        public string InputEmail
+        public string Email
         {
-            get { return _input_email; }
+            get { return _email; }
             set
             {
 
-                _input_email = value;
-                OnPropertyChanged(nameof(InputEmail));
+                _email = value;
+                OnPropertyChanged(nameof(Email));
 
             }
         }
-        public string InputPassword
+        public string Password
         {
-            get { return _input_password; }
+            get { return _password; }
             set
             {
 
-                _input_password = value;
-                OnPropertyChanged(nameof(InputPassword));
+                _password = value;
+                OnPropertyChanged(nameof(Password));
 
             }
         }
-        public string InputRepeatedPassword
+        public string RepeatedPassword
         {
-            get { return _input_repeated_password; }
+            get { return _repeatedPassword; }
             set
             {
 
-                _input_repeated_password = value;
-                OnPropertyChanged(nameof(InputRepeatedPassword));
+                _repeatedPassword = value;
+                OnPropertyChanged(nameof(RepeatedPassword));
 
             }
         }
@@ -63,17 +63,17 @@ namespace TareaXamarin1.ViewModels
 
         async private void Register()
         {
-            if (string.IsNullOrEmpty(InputPassword) || string.IsNullOrEmpty(InputUser) || string.IsNullOrEmpty(InputEmail) || string.IsNullOrEmpty(InputRepeatedPassword))
+            if (string.IsNullOrEmpty(Password) || string.IsNullOrEmpty(User) || string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(RepeatedPassword))
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Please fill all the fields", "Ok");
             }
-            else if (!string.Equals(InputPassword, InputRepeatedPassword))
+            else if (!string.Equals(Password, RepeatedPassword))
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "The passwords don't match ", "Ok");
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Welcome", $"Hello, {InputUser}", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Welcome", $"Hello, {User}", "Ok");
                 await Application.Current.MainPage.Navigation.PushModalAsync(new HomePage());
             }
         }

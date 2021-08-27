@@ -17,27 +17,27 @@
 
             <Entry Placeholder="Username" 
                    PlaceholderColor="LightGray" 
-                   Text="{Binding InputUser}"/>
+                   Text="{Binding User}"/>
 
             <Label Text="Email:"/>
 
             <Entry Placeholder="Email" 
                    PlaceholderColor="LightGray" 
-                   Text="{Binding InputEmail}"/>
+                   Text="{Binding Email}"/>
             
             <Label Text="Password:"/>
 
             <Entry Placeholder="Password" 
                PlaceholderColor="LightGray" 
                IsPassword="True" 
-               Text="{Binding InputPassword}" />
+               Text="{Binding Password}" />
 
             <Label Text="Confirm password:"/>
             
             <Entry Placeholder="Confirm your password" 
                PlaceholderColor="LightGray" 
                IsPassword="True" 
-               Text="{Binding InputRepeatedPassword}" />
+               Text="{Binding RepeatedPassword}" />
 
             <Button Text="Sign up"
                 BackgroundColor="Blue"

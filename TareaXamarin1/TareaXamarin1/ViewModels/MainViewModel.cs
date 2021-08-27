@@ -10,71 +10,71 @@ namespace TareaXamarin1.ViewModels
 {
     class MainViewModel : INotifyPropertyChanged
     {
-        private string _input_user;
-        private string _input_password;
+        private string _user;
+        private string _password;
 
-        public string InputUser 
+        public string User 
         {
-            get { return _input_user; }
+            get { return _user; }
             set {
 
-                _input_user = value;
-                OnPropertyChanged(nameof(InputUser));
+                _user = value;
+                OnPropertyChanged(nameof(User));
             
             } 
         }
-        public string InputPassword
+        public string Password
         {
-            get { return _input_password; }
+            get { return _password; }
             set
             {
 
-                _input_password = value;
-                OnPropertyChanged(nameof(InputPassword));
+                _password = value;
+                OnPropertyChanged(nameof(Password));
 
             }
         }
 
         async private void Login()
         {
-            if (string.IsNullOrEmpty(InputPassword) && string.IsNullOrEmpty(InputUser))
+            if (string.IsNullOrEmpty(Password) && string.IsNullOrEmpty(User))
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Please enter your credentials ", "Ok");
 
             }
-            else if (string.IsNullOrEmpty(InputPassword))
+            else if (string.IsNullOrEmpty(Password))
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Please enter your password ", "Ok");
             }
-            else if (string.IsNullOrEmpty(InputUser))
+            else if (string.IsNullOrEmpty(User))
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "Please enter your username", "Ok");
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Welcome", $"Hello, {InputUser}", "Ok");
+                await Application.Current.MainPage.DisplayAlert("Welcome", $"Hello, {User}", "Ok");
                 await Application.Current.MainPage.Navigation.PushModalAsync(new HomePage());
             }
         }
-        async private void RegisterPage() 
+        async private void OnRegister() 
         {
             await Application.Current.MainPage.Navigation.PushAsync(new SignUpPage());
         }
 
-        public ICommand LoginComand{ get; }
-        public ICommand RegisterPageCommand { get; }
+        public ICommand LoginCommand{ get; }
+        public ICommand RegisterCommand { get; }
 
         public MainViewModel()
         {
-            LoginComand = new Command(Login);
-            RegisterPageCommand = new Command(RegisterPage);
+            LoginCommand = new Command(Login);
+            RegisterCommand = new Command(OnRegister);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void OnPropertyChanged(string propertyName)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));  
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
