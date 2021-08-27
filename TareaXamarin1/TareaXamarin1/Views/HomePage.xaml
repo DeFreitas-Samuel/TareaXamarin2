@@ -5,8 +5,8 @@
             xmlns:local="clr-namespace:TareaXamarin1.Views"
             Title="Home Page">
 
-    <local:HomeAppPage/>
     <local:DeliveryPage/>
+    <local:HomeAppPage/>
     <local:BookmarkPage/>
     <local:TopFoodiePage/>
     <local:ProfilePage/>

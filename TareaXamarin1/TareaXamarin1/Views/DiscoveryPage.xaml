@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TareaXamarin1.Views.DeliveryPage"
+             xmlns:viewmodels="clr-namespace:TareaXamarin1.ViewModels" 
+             x:DataType="viewmodels:DiscoveryViewModel"
              Title="Discovery"
              Icon="delivery">
     <ContentPage.Content>
@@ -17,12 +19,12 @@
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
             <Label Text="Discovery" Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"/>
-            <Button Grid.Row="1" Grid.Column="0" ImageSource="bars" Margin="20,10,10, 5" BackgroundColor="White" Text="{Binding Tit}"/>
-            <Button Grid.Row="1" Grid.Column="1" ImageSource="fine_dining" Margin="10,10,20, 5" BackgroundColor="White" Text="Fine Dining 15 places"/>
-            <Button Grid.Row="2" Grid.Column="0" ImageSource="cafes" Margin="20,5,10, 5" BackgroundColor="White" Text="Cafes            28 places"/>
-            <Button Grid.Row="2" Grid.Column="1" ImageSource="nearby" Margin="10,5,20, 5" BackgroundColor="White" Text="Nearby           34 places"/>
-            <Button Grid.Row="3" Grid.Column="0" ImageSource="fast_food" Margin="20,5,10,10" BackgroundColor="White" Text="Fast Foods 29 places"/>
-            <Button Grid.Row="3" Grid.Column="1" ImageSource="featured_food" Margin="10,5,20, 10" BackgroundColor="White" Text="Featured Foods        21 places"/>
+            <Button Grid.Row="1" Grid.Column="0" ImageSource="{Binding BarAndHotelsMenuOption.Image}" Margin="20,10,10, 5" BackgroundColor="White" Text="{Binding BarAndHotelsMenuOption.Title}"/>
+            <Button Grid.Row="1" Grid.Column="1" ImageSource="{Binding FineDiningMenuOption.Image}" Margin="10,10,20, 5" BackgroundColor="White" Text="{Binding FineDiningMenuOption.Title}"/>
+            <Button Grid.Row="2" Grid.Column="0" ImageSource="{Binding CafesMenuOption.Image}" Margin="20,5,10, 5" BackgroundColor="White" Text="{Binding CafesMenuOption.Title}"/>
+            <Button Grid.Row="2" Grid.Column="1" ImageSource="{Binding NearbyMenuOption.Image}" Margin="10,5,20, 5" BackgroundColor="White" Text="{Binding NearbyMenuOption.Title}"/>
+            <Button Grid.Row="3" Grid.Column="0" ImageSource="{Binding FastFoodsMenuOption.Image}" Margin="20,5,10,10" BackgroundColor="White" Text="{Binding FastFoodsMenuOption.Title}"/>
+            <Button Grid.Row="3" Grid.Column="1" ImageSource="{Binding FeaturedFoodMenuOption.Image}" Margin="10,5,20, 10" BackgroundColor="White" Text="{Binding FeaturedFoodMenuOption.Title}"/>
 
 
         </Grid>
