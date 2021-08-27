@@ -15,13 +15,11 @@
 ## Mensaje de confirmacion al entrar todos los campos correctamente en el registro y antes de mandarte a la tabbed page
 ![Screenshot_1630001341](https://user-images.githubusercontent.com/52897285/131014740-8e8cbe5d-858a-4146-bd1a-4c105ee7214c.png)
 
-## UI replicado con Grid para puntos extras (El page tiene un Scroll View por lo que el resto de los botones estan pero no caben en la pantalla)
-![Screenshot_1630001355](https://user-images.githubusercontent.com/52897285/131014729-23644c71-3a5a-4d50-a152-04dff7418f4c.png)
+## UI replicado con Grid 
+![Screenshot_1630015832](https://user-images.githubusercontent.com/52897285/131044978-87e1b0de-b817-4f25-9558-b45121cd866f.png)
 
-## Segunda page de mi tabbed page
-![Screenshot_1630001373](https://user-images.githubusercontent.com/52897285/131014734-03048328-228f-4a98-84c2-dab9967df72b.png)
+## Profile Page de mi tabbed page
+![Screenshot_1630017825](https://user-images.githubusercontent.com/52897285/131045462-9ecdcce1-eb69-4a53-a98a-8f49971e84f0.png)
 
-## Tercera Page de mi tabbed page
-![Screenshot_1630001376](https://user-images.githubusercontent.com/52897285/131014739-b0e2e9e5-7c01-4d65-b3fe-31c61b1ea805.png)
 
 
