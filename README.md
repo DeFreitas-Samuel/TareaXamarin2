@@ -15,8 +15,8 @@
 ## Mensaje de confirmacion al entrar todos los campos correctamente en el registro y antes de mandarte a la tabbed page
 ![Screenshot_1630001341](https://user-images.githubusercontent.com/52897285/131014740-8e8cbe5d-858a-4146-bd1a-4c105ee7214c.png)
 
-## UI replicado con Grid 
-![Screenshot_1630015832](https://user-images.githubusercontent.com/52897285/131044978-87e1b0de-b817-4f25-9558-b45121cd866f.png)
+## UI replicado con Grid y con las correcciones realizadas (Lo hice con stacklayout en vez de button y ahora tengo dos textos centrados en vez de uno)
+![Screenshot_1630099866](https://user-images.githubusercontent.com/52897285/131190825-7910dce4-432f-4aec-8b83-ff95e2882ec3.png)
 
 ## Profile Page de mi tabbed page
 ![Screenshot_1630017825](https://user-images.githubusercontent.com/52897285/131045462-9ecdcce1-eb69-4a53-a98a-8f49971e84f0.png)
