@@ -7,7 +7,7 @@
              Title="Discovery"
              Icon="delivery">
     <ContentPage.Content>
-        <Grid  BackgroundColor="#c6c6c7">
+        <Grid  BackgroundColor="#dee5e9">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="2*"/>
@@ -19,14 +19,55 @@
                 <ColumnDefinition Width="0.5*"/>
             </Grid.ColumnDefinitions>
             <Label Text="Discovery" Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"/>
-            <Button Grid.Row="1" Grid.Column="0" ImageSource="{Binding BarAndHotelsMenuOption.Image}" Margin="20,10,10, 5" BackgroundColor="White" Text="{Binding BarAndHotelsMenuOption.Title}"/>
-            <Button Grid.Row="1" Grid.Column="1" ImageSource="{Binding FineDiningMenuOption.Image}" Margin="10,10,20, 5" BackgroundColor="White" Text="{Binding FineDiningMenuOption.Title}"/>
-            <Button Grid.Row="2" Grid.Column="0" ImageSource="{Binding CafesMenuOption.Image}" Margin="20,5,10, 5" BackgroundColor="White" Text="{Binding CafesMenuOption.Title}"/>
-            <Button Grid.Row="2" Grid.Column="1" ImageSource="{Binding NearbyMenuOption.Image}" Margin="10,5,20, 5" BackgroundColor="White" Text="{Binding NearbyMenuOption.Title}"/>
-            <Button Grid.Row="3" Grid.Column="0" ImageSource="{Binding FastFoodsMenuOption.Image}" Margin="20,5,10,10" BackgroundColor="White" Text="{Binding FastFoodsMenuOption.Title}"/>
-            <Button Grid.Row="3" Grid.Column="1" ImageSource="{Binding FeaturedFoodMenuOption.Image}" Margin="10,5,20, 10" BackgroundColor="White" Text="{Binding FeaturedFoodMenuOption.Title}"/>
 
+            <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White" Margin="20, 10">
+                <Image Source="{Binding BarAndHotelsMenuOption.Image}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+                <Label Text="{Binding BarAndHotelsMenuOption.Title}" HorizontalTextAlignment="Center"  TextColor="Black" />
+                <Label Text="{Binding BarAndHotelsMenuOption.Places}" HorizontalOptions="Center" TextColor="Gray"/>
+            </StackLayout>
 
+            <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White"  Margin="20, 10">
+                <Image Source="{Binding FineDiningMenuOption.Image}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+                <Label Text="{Binding FineDiningMenuOption.Title}" HorizontalTextAlignment="Center"  TextColor="Black" />
+                <Label Text="{Binding FineDiningMenuOption.Places}" HorizontalOptions="Center" TextColor="Gray"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White" Margin="20,10">
+                <Image Source="{Binding CafesMenuOption.Image}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+                <Label Text="{Binding CafesMenuOption.Title}" HorizontalTextAlignment="Center"  TextColor="Black" />
+                <Label Text="{Binding CafesMenuOption.Places}" HorizontalOptions="Center" TextColor="Gray"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White" Margin="20,10">
+                <Image Source="{Binding NearbyMenuOption.Image}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+                <Label Text="{Binding NearbyMenuOption.Title}" HorizontalTextAlignment="Center"  TextColor="Black" />
+                <Label Text="{Binding NearbyMenuOption.Places}" HorizontalOptions="Center" TextColor="Gray"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="3" Grid.Column="0" BackgroundColor="White" Margin="20,10">
+                <Image Source="{Binding FastFoodsMenuOption.Image}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+                <Label Text="{Binding FastFoodsMenuOption.Title}" HorizontalTextAlignment="Center"  TextColor="Black" />
+                <Label Text="{Binding FastFoodsMenuOption.Places}" HorizontalOptions="Center" TextColor="Gray"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="3" Grid.Column="1" BackgroundColor="White" Margin="20,10">
+                <Image Source="{Binding FeaturedFoodMenuOption.Image}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+                <Label Text="{Binding FeaturedFoodMenuOption.Title}" HorizontalTextAlignment="Center"  TextColor="Black" />
+                <Label Text="{Binding FeaturedFoodMenuOption.Places}" HorizontalOptions="Center" TextColor="Gray"/>
+            </StackLayout>
+            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

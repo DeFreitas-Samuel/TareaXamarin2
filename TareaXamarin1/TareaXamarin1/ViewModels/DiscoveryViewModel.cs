@@ -21,16 +21,22 @@ namespace TareaXamarin1.ViewModels
         {
             BarAndHotelsMenuOption.Title = "Bars & Hotels";
             BarAndHotelsMenuOption.Image = "bars";
+            BarAndHotelsMenuOption.Places = "42 places";
             FineDiningMenuOption.Title = "Fine Dining";
             FineDiningMenuOption.Image = "fine_dining";
+            FineDiningMenuOption.Places = "15 places";
             CafesMenuOption.Title = "Cafes";
             CafesMenuOption.Image = "cafes";
+            CafesMenuOption.Places = "28 places";
             NearbyMenuOption.Title = "Nearby";
             NearbyMenuOption.Image = "nearby";
+            NearbyMenuOption.Places = "34 places";
             FastFoodsMenuOption.Title = "Fast Foods";
             FastFoodsMenuOption.Image = "fast_food";
+            FastFoodsMenuOption.Places = "29 places";
             FeaturedFoodMenuOption.Title = "Featured Food";
             FeaturedFoodMenuOption.Image = "featured_food";
+            FeaturedFoodMenuOption.Places = "21 places";
         }
 
         
