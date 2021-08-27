@@ -53,12 +53,12 @@ namespace TareaXamarin1.ViewModels
             else
             {
                 await Application.Current.MainPage.DisplayAlert("Welcome", $"Hello, {InputUser}", "Ok");
-                Application.Current.MainPage = new HomePage();
+                await Application.Current.MainPage.Navigation.PushModalAsync(new HomePage());
             }
         }
-        private void RegisterPage() 
+        async private void RegisterPage() 
         {
-            Application.Current.MainPage = new SignUpPage();
+            await Application.Current.MainPage.Navigation.PushAsync(new SignUpPage());
         }
 
         public ICommand LoginComand{ get; }

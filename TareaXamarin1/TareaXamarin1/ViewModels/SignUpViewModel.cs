@@ -74,7 +74,7 @@ namespace TareaXamarin1.ViewModels
             else
             {
                 await Application.Current.MainPage.DisplayAlert("Welcome", $"Hello, {InputUser}", "Ok");
-                Application.Current.MainPage = new HomePage();
+                await Application.Current.MainPage.Navigation.PushModalAsync(new HomePage());
             }
         }
 

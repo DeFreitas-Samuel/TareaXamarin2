@@ -18,7 +18,6 @@
             <Label Text="Name:"/>
             <Label Text="Email:"/>
             <Label Text="Member since:"/>
-            <Label Text="Achievements:"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
